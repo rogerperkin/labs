@@ -1,0 +1,12 @@
+name: "Juniper vJunos Router Lab"
+prefix: ""
+
+mgmt:
+  network: fixedips
+  ipv4-subnet: 172.16.250.0/24
+
+topology:
+  nodes:
+    vJunos-1:
+      kind: juniper_vjunosrouter
+      image: vrnetlab/juniper_vjunos-router:23.2R1.15
